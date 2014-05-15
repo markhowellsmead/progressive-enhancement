@@ -26,7 +26,6 @@ Steps
 * If the browser has Javascript activated, the Javascript files are loaded using an inline Javascript function. So if the browser doesn't have Javascript capability, it won't even load the files.
 * If the browser has Javascript activated, then additional CSS files are loaded which contain more advanced rules.
 * By using the simple attribute media="(min-width:0)", the file containing CSS code for responsive layouts won't be loaded by browsers which don't understand these rules.
-* This article and code was written by Mark Howells-Mead and most recently published on 15th May 2014.
 
 Demo
 ----
