@@ -1,1 +1,30 @@
-.fullheight{position:relative;top:0;left:0;bottom:0;right:0;height:100vh}.fullheight .inner{position:absolute;top:0;left:0;bottom:0;right:0;z-index:0}.non-js{display:none}nav{position:fixed;top:0;left:0;right:0;padding:.5em 2%;width:100%;z-index:1;border-style:dotted;border-color:#ccc;border-width:0 0 1px;background:#f6f6f6}nav ul{list-style-type:none;margin:0;padding:0}nav ul li{display:inline}nav header{display:none}div.container{margin-top:3.5em}
+.non-js {
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em 2%;
+  width: 100%;
+  z-index: 1;
+  border-style: dotted;
+  border-color: #cccccc;
+  border-width: 0 0 1px;
+  background: #f6f6f6;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+}
+nav header {
+  display: none;
+}
+div.container {
+  margin-top: 3.5em;
+}
