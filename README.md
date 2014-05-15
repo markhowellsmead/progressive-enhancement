@@ -28,6 +28,11 @@ Steps
 * By using the simple attribute media="(min-width:0)", the file containing CSS code for responsive layouts won't be loaded by browsers which don't understand these rules.
 * This article and code was written by Mark Howells-Mead and most recently published on 15th May 2014.
 
+Demo
+----
+
+A demonstration of the template in this is available at http://stuff.mhm.li/progressive-enhancement/.
+
 Author
 ------
 
