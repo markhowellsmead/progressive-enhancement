@@ -1,0 +1,44 @@
+@import "/Library/WebServer/webroot/frappant_helpers/less/basics.less";
+
+@path-css:'';
+
+.rslides {
+	.responsiveslides;
+	height:100%;
+	position:absolute;
+}
+
+.rslides_tabs {
+	.responsiveslides_tabs();
+	position:absolute;
+	bottom:1em;
+	li {
+		margin:0 .5em;padding:0;
+		&:first-child {
+			margin-left:0;
+		}
+	}
+
+	a {
+		color: #aaa;
+	}
+
+	.rslides_here a {
+		color: #fff;
+		font-weight:bold;
+	}
+}
+
+.rslides_nav {
+	position:absolute;top:45%;z-index:10;
+	display: block;
+	&.prev {left:2%;}
+	&.next {right:2%;}
+	padding: .25em;
+	opacity: .25;
+	background: #000;
+	.border-radius(.5em, 0, 0, .5em);
+	&:hover {
+		opacity: 1;
+	}
+}

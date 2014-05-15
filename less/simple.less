@@ -1,0 +1,37 @@
+// this css file is loaded using javascript
+// so there's no need to use the html.js definition
+
+@import 'config.less';
+
+.non-js {
+	// hide elements marked for display only when JS is not active
+	display: none;
+}
+
+// navigation
+nav {
+    position:fixed;
+    top:0;left:0;right:0;
+    padding: .5em 2%;
+    width:100%;
+    z-index:1;
+    border-style: dotted;
+    border-color: @colour-border;
+    border-width: 0 0 1px;
+    background: #f6f6f6;
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    li {
+	    	display: inline;
+	    }
+	}
+	header {
+		display:none;
+	}
+}
+
+div.container {
+	margin-top: 3.5em;
+}

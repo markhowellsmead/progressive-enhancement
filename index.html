@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html lang="de" class="de winie ie7 oldie"><![endif]-->
+<!--[if IE 8 ]><html lang="de" class="de winie ie8 oldie"><![endif]-->
+<!--[if IE 9 ]><html lang="de" class="de winie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>Template</title>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+
+<div class="container">
+	
+	<section class="content">
+
+		<h1>Progressive enhancement</h1>
+
+		<article>
+			<h2>Implementation</h2>
+			<p>This page is intended to be a basic starting point for a template which implements best-case <a href="http://alistapart.com/article/understandingprogressiveenhancement">progressive enhancement principles</a>. It is not a "design" per se, nor is it suitable for unmodified use in a production environment.</p>
+			<h3>What is progressive enhancement?</h3>
+			<p>The principle is based on the concept of allowing all of your content to be accessible to all users. This sample page works excellently whether JavaScript is enabled or not; both with and without the use of <tt>@media</tt>-queries to allow responsive design to take effect.</p>
+			<p>The page works seamlessly on mobile devices, both large and small, and text readers. It works in older browsers and the very newest browsers. The newer and more capable the browser, the more advanced the experience.</p>
+			<h3>What's the point?</h3>
+			<p>By applying these principles, you can more easily provide advanced styling and interaction to those visitors who can use them.</p>
+			<p>For example, delivering a menu using a Javascript function is pointless, if the browser doesn't understand (or allow) Javascript.</p>
+			<p>Delivering a load of CSS rules for a responsive layout to IE8 is pointless: this browser doesn't understand the basic <tt>@media{}</tt> rule which makes it all possible.</p>
+			<h3>Steps</h3>
+			<ul>
+				<li>The basic page layout is delivered, with a simple stylesheet containing rules which all browsers can understand.</li>
+				<li>If the browser has Javascript activated, the Javascript files are loaded using an inline Javascript function. So if the browser doesn't have Javascript capability, it won't even load the files.</li>
+				<li>If the browser has Javascript activated, then additional CSS files are loaded which contain more advanced rules.</li>
+				<li>By using the simple attribute <tt>media="(min-width:0)"</tt>, the file containing CSS code for responsive layouts won't be loaded by browsers which don't understand these rules.</li>
+			</ul>
+			<hr>
+			<author>This article and code was written by <a href="http://mhm.li/">Mark Howells-Mead</a> and most recently published on 15th May 2014.</author>
+			
+		</article>
+
+	</section>
+
+	<nav id="navigation">
+		<p class="non-js">Reference links</p>
+		<ul>
+			<li><a href="http://alistapart.com/article/understandingprogressiveenhancement">A List Apart</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Responsive_web_design">Responsive Design</a></li>
+			<li><a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard">Cutting the mustard</a></li>
+		</ul>
+	</nav>
+
+</div>
+
+<script>
+	document.write('<script src="//code.jquery.com/jquery-latest.min.js"><\/script>');
+	document.write('<script src="/dev/vh/js/ui.js"><\/script>');
+</script>
+
+</body>
+</html>
